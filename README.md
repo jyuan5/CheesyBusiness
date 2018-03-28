@@ -29,4 +29,4 @@ If not, invoke the recursive abstraction. {
 
 ## Class(es), with fields and methods:
 
-## Version*n* wishlist:
+## Version *n* wishlist:
