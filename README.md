@@ -26,16 +26,17 @@ or
 
 It is not possible to leave the starting position by one unit and reach the treasure.
 
-
 ### English/Pseudocode Description of Algorithm
 
 Check if the starting position is the position which contains the treasure.
-If not, invoke the recursive abstraction. {
+
+If not, invoke the recursive abstraction:
 - move one unit in the next possible cardinal direction 
 - make the new position the new starting position
 - invoke the recursive step 
-}
 
 ### Class(es), with fields and methods
+
+[ ] 
 
 ### Version *n* wishlist
