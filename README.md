@@ -18,8 +18,8 @@ the recursive abstraction can
   return the boolean value of "it is possible to leave the starting position moved by one unit and reach the treasure"
   
 ### Base Case
-- The starting position is the position which contains the treasure.
-- If all four neighboring cells are marked as illegal, then there is no treasure.
+- The current position is the position which contains the treasure (return true).
+- The current position is on a wall (return false).
 
 ### English/Pseudocode Description of Algorithm
 Check if the starting position is the position which contains the treasure.
