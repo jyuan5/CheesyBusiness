@@ -25,7 +25,8 @@ the recursive abstraction can
 Check if the starting position is the position which contains the treasure.
 
 If not, invoke the recursive abstraction:
-- move one unit in the next possible cardinal direction 
+- determine the next possible cardinal direction with a legal cell and record it
+- If there is one legal neighboring cell, then mark the current cell as illegal and move one unit in the previously recorded cardinal direction. If there is more than one legal neighboring cell, then it is a junction; do not mark current cell as illegal and move one unit in the next possible cardinal direction.
 - make the new position the new starting position
 - invoke the recursive step 
 
