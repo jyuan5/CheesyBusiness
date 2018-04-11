@@ -22,7 +22,8 @@ the recursive abstraction can
 - The current position is on a wall (return false).
 
 ### English/Pseudocode Description of Algorithm
-Check if the starting position is the position which contains the treasure.
+Check if the current position contains the treasure.
+Check if the current position is a wall.
 
 If not, invoke the recursive abstraction:
 - determine the next possible cardinal direction with a stepping stone
