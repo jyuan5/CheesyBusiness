@@ -32,4 +32,7 @@ If not, invoke the recursive abstraction:
 
 ### Class(es), with fields and methods
 
+### Known Bugs
+
+
 ### Version *n* wishlist
