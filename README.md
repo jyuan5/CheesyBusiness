@@ -26,7 +26,6 @@ Check if the current position contains the treasure.
 Check if the current position is a wall.
 
 If not, invoke the recursive abstraction:
-- determine the next possible cardinal direction with a stepping stone
 - DropA wall on the current position of the explorer
 - move one step in the next possible cardinal direction
 - invoke the recursive step
