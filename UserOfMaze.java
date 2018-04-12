@@ -31,7 +31,7 @@ public class UserOfMaze {
 //         displayer = new Displayer( Integer.parseInt( commandLine[3]));
 //         displayerTest( maze);
 
-         snapshotDemo( maze);
+        // snapshotDemo( maze);
     }
 
 
