@@ -13,24 +13,40 @@ public class MazeSolver {
 	else {
 	    mazeToBeSolved.dropA( 1);
 	    Maze old = takeSnapshot(mazeToBeSolved);
-	    mazeToBeSolved.go( 1);
-	    if ( solve( mazeToBeSolved) == true)
-		return true;
-	    mazeToBeSolved = old;
-	    mazeToBeSolved.go( 2);
-	    if ( solve( mazeToBeSolved) == true)
-		return true;
-	    mazeToBeSolved = old;
-	    mazeToBeSolved.go( 4);
-	    if ( solve( mazeToBeSolved) == true)
-		return true;
-	    mazeToBeSolved = old;		
-	    mazeToBeSolved.go( 8);
-	    if ( solve( mazeToBeSolved) == true)
-		return true;
-	    mazeToBeSolved = old;
-	    return false;
 	    
+	    mazeToBeSolved.go( 1);
+	    System.out.println (mazeToBeSolved);
+	    if ( solve( mazeToBeSolved) == true)
+		return true;
+	    System.out.println (mazeToBeSolved);
+	    mazeToBeSolved = old;
+	    System.out.println (mazeToBeSolved);
+	    
+	    mazeToBeSolved.go( 2);
+	    System.out.println (mazeToBeSolved);
+	    if ( solve( mazeToBeSolved) == true)
+		return true;
+	    System.out.println (mazeToBeSolved);
+	    mazeToBeSolved = old;
+	    System.out.println (mazeToBeSolved);
+	    
+	    mazeToBeSolved.go( 4);
+	    System.out.println (mazeToBeSolved);
+	    if ( solve( mazeToBeSolved) == true)
+		return true;
+	    System.out.println (mazeToBeSolved);
+	    mazeToBeSolved = old;
+	    System.out.println (mazeToBeSolved);
+	    
+	    mazeToBeSolved.go( 8);
+	    System.out.println (mazeToBeSolved);
+	    if ( solve( mazeToBeSolved) == true)
+		return true;
+	    System.out.println (mazeToBeSolved);
+	    
+	    System.out.println (mazeToBeSolved);
+	    
+	    return false;
 	}
     }
 

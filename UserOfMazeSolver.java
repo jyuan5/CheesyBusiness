@@ -18,6 +18,8 @@ public class UserOfMazeSolver {
 
 	MazeSolver testMaze = new MazeSolver();
         System.out.println(testSolver(testMaze, maze));
+
+	
     }
 
     public static boolean testSolver( MazeSolver solver, Maze x) {
