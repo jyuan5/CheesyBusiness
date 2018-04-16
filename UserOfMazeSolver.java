@@ -9,6 +9,8 @@ public class UserOfMazeSolver {
     public static void main(String[] commandLine)
 	throws java.io.FileNotFoundException {
         System.out.println();
+        
+        //java UserOfMaze mazes/intersection_treasureNorth.txt 1 1
 
         Maze maze = new Maze( commandLine[0]
 			      , Integer.parseInt( commandLine[1])
