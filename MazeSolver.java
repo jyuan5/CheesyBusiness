@@ -4,7 +4,7 @@
 
 public class MazeSolver {
 
-    public final int[] direction = {Maze.EAST, Maze.NORTH, Maze.SOUTH, Maze.WEST};
+    public final int[] direction = {Maze.WEST, Maze.SOUTH, Maze.NORTH, Maze.EAST};
 
     public boolean solve( Maze mazeToBeSolved) {
 
@@ -23,16 +23,18 @@ public class MazeSolver {
 
 	    //drop wall and take snapshot
 	    mazeToBeSolved.dropA( 1);
-	    Maze old = takeSnapshot(mazeToBeSolved);
-	    System.out.println ("wall dropped and snapshot taken" + old);
 
 	    //iterate through the directions
 	    for (int i = 0; i < 4; i++){
 		System.out.println ("next direction " + i );
 		
+		Maze old = takeSnapshot(mazeToBeSolved);
+	       
 		//move the explorer in that direction
+		System.out.println( "old" + old);
 		mazeToBeSolved.go(direction[i]);
 		System.out.println ("explorer moved " + mazeToBeSolved);
+		System.out.println( "old" + old);
 		
 		//answer the problem for new mazeToBeSolved
 		if ( solve( mazeToBeSolved) == true){
@@ -40,9 +42,11 @@ public class MazeSolver {
 		    return true;}
 	        System.out.println ("explorer did not find treasure");
 		
-		//restore snapshotted maze if answer to problem is false
-		mazeToBeSolved = old;
-		System.out.println ("snapshot restored " + mazeToBeSolved);
+		 //restore snapshotted maze if answer to problem is false
+		System.out.println( mazeToBeSolved);
+		System.out.println( "old" + old);
+		 mazeToBeSolved = old;
+		 System.out.println ("snapshot restored " + mazeToBeSolved);
 	    }
 	    //none of the directions return true, explorer cannot reach treasure
 	    return false;
