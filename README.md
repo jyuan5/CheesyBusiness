@@ -25,11 +25,11 @@ the recursive abstraction can
 ### English/Pseudocode Description of Algorithm
 Check if the current position contains the treasure.
 Check if the current position is a wall.
-
 If not, invoke the recursive abstraction:
 - DropA wall on the current position of the explorer
+- take snapshot
 - move one step in the next possible cardinal direction
-- invoke the recursive step
+- invoke the recursive step (and restore snapshot)
 
 ### Class(es), with fields and methods
 - Maze
@@ -71,7 +71,7 @@ If not, invoke the recursive abstraction:
 None
 
 ### Version *n* wishlist
-[x] is there a solution
-[ ] what is a solution
-[x] how many solutions
-[ ] what are the solutions
+o [x] is there a solution
+o [ ] what is a solution
+o [x] how many solutions
+o [ ] what are the solutions
