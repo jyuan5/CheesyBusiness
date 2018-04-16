@@ -6,9 +6,11 @@ Maia Brydon, Jessie Yuan
 
 ### Problem
 
-v0. Return the boolean value of "it is possible to leave the current position and reach treasure."
+#### v0. 
+Return the boolean value of "it is possible to leave the current position and reach treasure."
 
-v1. Return the number of solutions to the maze.
+#### v1. 
+Return the number of solutions to the maze.
 
 ### Recursive Abstraction
 When asked to 
@@ -69,7 +71,9 @@ If not, invoke the recursive abstraction:
   - testSolver()
 
 ### Known Bugs
-None
+- None for Maze
+- None for MazeSolver v0
+- v1 of MazeSolver can only handle mazes with one or two solutions. It cannot detect that a maze may have multiple routes to reach a single treasure and it cannot detect that a maze may have more than one treasure.
 
 ### Version *n* wishlist
 - is there a solution
