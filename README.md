@@ -7,6 +7,7 @@ Maia Brydon, Jessie Yuan
 ### Problem
 
 v0. Return the boolean value of "it is possible to leave the current position and reach treasure."
+
 v1. Return the number of solutions to the maze.
 
 ### Recursive Abstraction
