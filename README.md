@@ -33,16 +33,45 @@ If not, invoke the recursive abstraction:
 
 ### Class(es), with fields and methods
 - Maze
-  - 
+  - terminal fields (treasure, wall, stepping stone)
+  - cardinal direction fields (east, north, south, west)
+  - maze
+  - MAX_RANKS
+  - rankCount
+  - explorerPosition
+  - Maze() constructor
+  - Maze() copy constructor
+  - go()
+  - dropA()
+  - explorerIsOnA()
+  - private Vector class
+    - rank, file
+    - Vector() constructor
+    - Vector() copy constructor
+    - add()
+    - equals()
 - UserOfMaze
+  - displayer
+  - main()
+  - moveTest()
+  - dropTest()
+  - copyConstructTest()
+  - displayerTest()
+  - snapshotDemo()
 - MazeSolver
+  - direction
+  - solve()
+  - takeSnapshot()
 - UserOfMazeSolver
+  - displayer
+  - main()
+  - testSolver()
 
 ### Known Bugs
 None
 
 ### Version *n* wishlist
-- is there a solution
-- what is a solution
-- how many solutions
-- what are the solutions
+[x] is there a solution
+[ ] what is a solution
+[x] how many solutions
+[ ] what are the solutions
