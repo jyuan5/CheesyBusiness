@@ -71,7 +71,7 @@ If not, invoke the recursive abstraction:
 None
 
 ### Version *n* wishlist
-o [x] is there a solution
-o [ ] what is a solution
-o [x] how many solutions
-o [ ] what are the solutions
+- is there a solution
+- what is a solution
+- how many solutions
+- what are the solutions
