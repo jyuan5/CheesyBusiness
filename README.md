@@ -7,6 +7,7 @@ Maia Brydon, Jessie Yuan
 ### Problem
 
 v0. Return the boolean value of "it is possible to leave the current position and reach treasure."
+v1. Return the number of solutions to the maze.
 
 ### Recursive Abstraction
 When asked to 
@@ -31,9 +32,17 @@ If not, invoke the recursive abstraction:
 - invoke the recursive step
 
 ### Class(es), with fields and methods
-
+- Maze
+  - 
+- UserOfMaze
+- MazeSolver
+- UserOfMazeSolver
 
 ### Known Bugs
 None
 
 ### Version *n* wishlist
+- is there a solution
+- what is a solution
+- how many solutions
+- what are the solutions
